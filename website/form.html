@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Login Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            background: linear-gradient(to right, #000000, #331019, #620f24, #920728, #c20023, #c20023, #c20023, #c20023, #920728, #620f24, #331019, #000000);
+        }
+
+        div#box1 {
+            height: 460px;
+            width: 350px;
+            padding: 10px;
+            border: 2px solid #000;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        #box1 label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        #box1 .input-field {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #box1 .input-field input {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #box1 .input-field img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            margin-top: -40px;
+            margin-left: 240px;
+        }
+
+        #box1 button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #box1 button:hover {
+            background-color: darkblue;
+        }
+
+        #error {
+            color: red;
+            display: none;
+            font-size: 0.9em;
+        }
+
+        div#motion {
+            margin: 10% auto 0 auto;
+            padding: 2em;
+            width: 350px;
+            height: 465px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            position: relative;
+        }
+
+        li span {
+            color: black;
+            text-align: left;
+            letter-spacing: 1px;
+            font-style: italic;
+            animation: moving 5s linear infinite alternate-reverse;
+        }
+
+        div#box1 ul li {
+            list-style-type: none;
+            border-left: 5px double black;
+            word-spacing: 2px;
+            padding: 5px;
+        }
+
+        @keyframes moving {
+            0% { color: black; }
+            100% { color: rgba(25, 0, 255, 0.849); }
+        }
+    </style>
+</head>
+<body>
+    <div id="motion">
+        <div id="box1">
+            <ul>
+                <li><span>Welcome </span><span>to </span><span>Student </span><span>Library. </span><span>This </span>
+                    <span>site </span><span>is </span><span>accessible </span><span>to </span><span>approved </span>
+                    <span>users </span><span>only. </span><span>Please log in.</span>
+                </li>
+            </ul>
+            <br>
+
+            <div class="input-field">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username" aria-label="Username">
+            </div>
+
+            <div class="input-field">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" aria-label="Password">
+                <img id="togglePassword" src="eye.jfif" alt="Show/Hide Password">
+            </div>
+                <br>
+            <button onclick="login()">Submit</button>
+            <p id="error">Invalid username or password!</p>
+        </div>
+    </div>
+
+    <script>
+        const validUsername = "username";
+        const validPassword = "password";
+
+        const passwordField = document.getElementById('password');
+        const togglePassword = document.getElementById('togglePassword');
+
+        togglePassword.addEventListener('click', function () {
+            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', type);
+
+            togglePassword.src = type === 'password' ? 'eye.jfif' : 'closed-eye.png';
+        });
+
+        function login() {
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const errorMessage = document.getElementById('error');
+
+            if (username === validUsername && password === validPassword) {
+                window.location.href = "main web.html";
+            } else {
+                errorMessage.style.display = 'block';
+                setTimeout(() => {
+                    errorMessage.style.display = 'none';
+                }, 2000);
+            }
+        }
+    </script>
+</body>
+</html>

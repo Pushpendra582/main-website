@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="", initial-scale="1.0">
+    <title>Ënglish Comics</title>
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(255, 250, 240);
+}
+    section{
+        border: 15px solid black;
+        margin: 10px;
+        text-decoration: none;
+    background: radial-gradient(18% 28% at 24% 50%, #CEFAFFFF 7%, #073AFF00 100%),
+    radial-gradient(18% 28% at 18% 71%, #6DFFAEF5 57%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%,
+     #73F2FFFF 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),
+     radial-gradient(42% 53% at 34% 72%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%,
+      #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #FFFFFFFF 24%, #073AFF00 100%),
+      radial-gradient(21% 37% at 72% 23%, #D3FF6D9C 24%, #073AFF00 100%),
+     radial-gradient(35% 56% at 91% 74%, #8A4FFFF5 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%,
+      #6DFFAEF5 24%, #073AFF00 100%),repeating-linear-gradient(2deg, #8A4FFFF5 81%, #4EB5FFFF 95%);
+    }
+    ol{
+        padding: 10px;
+        list-style-type: none;
+        
+    }
+    li{
+        border: 2px solid green;
+        margin: 20px; 
+        height: 206px;
+        text-decoration: none;
+        background-color: blanchedalmond;
+        animation: appear 10s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 48%;
+        transition: 10s;
+    }
+    @keyframes appear {
+        from{
+            opacity: 0;
+            transform: translateX(-200px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+     }
+    a#img{
+        margin-left: 50px;
+        text-decoration: none;
+        font-size: 1px;
+        font-family: sans-serif;
+        font-weight: bolder;
+    }
+    img#back{
+        width: 70px;
+        border: 2px solid white;
+        border-radius: 50%;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: 30px;
+        transition: 0.4s;
+    }
+    img#back:hover{
+            border: 2px solid black;
+            border-radius: 50%;
+    }
+    h1#nv{
+        position: absolute;
+        top: 1px;
+        right: 40%;
+        font-size: 60px;
+        text-transform: uppercase;
+        color: rgb(111, 0, 255);
+        text-decoration: none;
+        transition: 0.5s;
+        
+    }
+    h1#nv:hover{
+        color: blue;
+    }
+    img{
+        width: 170px;
+        border: 5px solid black;
+        height: 192px;
+        margin: 2px;
+     }
+     li h1{
+        position: absolute;
+        border-bottom: 5px double black;
+        border-radius: 5px;
+        top: 50px;
+        left: 15%;
+        font-size: 40px;
+        text-transform: capitalize;
+        color: black;
+        transition: 0.3s;
+    }
+li h1:hover {
+  color: rgb(255, 184, 51);
+  border-bottom-color: rgb(255, 184, 51);
+}
+li h1:active {
+  color: blue;
+  border-bottom-color: blue;
+}
+footer{
+    border: 5px solid black;
+    border-radius: 100px;
+    height: 100px;
+    width: 500px;
+    background: radial-gradient(18% 28% at 24% 50%, #CEFAFFFF 7%, #073AFF00 100%),
+    radial-gradient(18% 28% at 18% 71%, #6DFFAEF5 57%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%,
+     #73F2FFFF 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),
+     radial-gradient(42% 53% at 34% 72%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%,
+      #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #FFFFFFFF 24%, #073AFF00 100%),
+      radial-gradient(21% 37% at 72% 23%, #D3FF6D9C 24%, #073AFF00 100%),
+     radial-gradient(35% 56% at 91% 74%, #8A4FFFF5 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%,
+      #6DFFAEF5 24%, #073AFF00 100%),repeating-linear-gradient(2deg, #8A4FFFF5 81%, #4EB5FFFF 95%);
+     margin-left:20px;
+     margin-bottom: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+h1#footer{
+        font-size: 40px;
+        text-transform: uppercase;
+        color: gray;
+        animation-name: moving;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+    }
+     @keyframes moving {
+    0%{
+        color: gray;
+    }
+    50%{
+        color: rgb(68, 57, 57);
+    }
+    100%{
+        color: black;
+        
+    } 
+}
+#s{
+    margin-left: 5px;
+}
+
+
+    </style>
+</head>
+<body>
+    <script src="not.js"></script>
+    <section>
+        <a href="main web.html" id="img"><img src="../allimages/back.png" alt="back" id="back"></a><h1 id="nv">english comics...</h1>
+            <ol>
+                <li><a href="../books/engcomic/bat.pdf"><img src="../allimages/english-comic-images/bat.jfif" alt="Image not found."><h1>"batman last knight on earth."</h1></a></li>
+                <li><a href="../books/engcomic/C-America1.pdf"><img src="../allimages/english-comic-images/C- America1.jfif" alt="Image not found."><h1>"captain america symbol of truth."</h1></a></li>
+                <li><a href="../books/engcomic/D-KnightsofSteel1.pdf"><img src="../allimages/english-comic-images/D-Knightsof Steel1.jfif" alt="Image not found."><h1>"dark knigh of steel."</h1></a></li>
+                <li><a href="../books/engcomic/Eternals.pdf"><img src="../allimages/english-comic-images/Eternals.jfif" alt="Image not found."><h1>"eternals."</h1></a></li>
+                <li><a href="../books/engcomic/ExtremeVenomverse1.pdf"><img src="../allimages/english-comic-images/ExtremeVenomverse1.jfif" alt="Image not found."><h1>"Extreme Venomverse-1."</h1></a></li>
+                <li><a href="../books/engcomic/Ghost Rider1.pdf"><img src="../allimages/english-comic-images/Ghost Rider1.jfif" alt="Image not found."><h1>"ghost rider vengeance forever."</h1></a></li>
+                <li><a href="../books/engcomic/GuardianGalaxy 1.pdf"><img src="../allimages/english-comic-images/GuardianGalaxy1.jfif" alt="Image not found."><h1>"guardians of the galaxy-1."</h1></a></li>
+                <li><a href="../books/engcomic/Injustice vs. M-Universe.pdf"><img src="../allimages/english-comic-images/Injustice vs. M Universe.jfif" alt="Image not found."><h1>"injustice VS masters of the universe."</h1></a></li>
+                <li><a href="../books/engcomic/IronMan.pdf"><img src="../allimages/english-comic-images/IronMan.jfif" alt="Image not found."><h1>"iron man."</h1></a></li>
+                <li><a href="../books/engcomic/Loki-AgentOfAsgard.pdf"><img src="../allimages/english-comic-images/Loki-AgentOf Asgard.jfif" alt="Image not found."><h1>"loki agent of asgard."</h1></a></li>                             
+                <li><a href="../books/engcomic/MilesMoralesSpiderMan.pdf"><img src="../allimages/english-comic-images/MilesMoralesSpiderMan.jfif" alt="Image not found."><h1>"spoder-man-1."</h1></a></li>
+                <li><a href="../books/engcomic/oldman.pdf"><img src="../allimages/english-comic-images/oldman.jfif" alt="Image not found."><h1>"old man hawkeye."</h1></a></li>
+                <li><a href="../books/engcomic/Spider-Man-City atWar.pdf"><img src="../allimages/english-comic-images/Spider-Man-City atWar.jfif" alt="Image not found."><h1>"Spider-Man-City at war."</h1></a></li>
+                <li><a href="../books/engcomic/SpiderManDarkGenesis.pdf"><img src="../allimages/english-comic-images/SpiderManDarkGenesis.jfif" alt="Image not found."><h1>"Spider-Man Dark Genesis."</h1></a></li>
+                <li><a href="../books/engcomic/SpidrManOficialMovi.pdf"><img src="../allimages/english-comic-images/SpidrManOficialMovi.jfif" alt="Image not found."><h1>"spider man."</h1></a></li>
+                <li><a href="../books/engcomic/SupermanNewKrypton.pdf"><img src="../allimages/english-comic-images/supermanNewKrypton.png" alt="Image not found."><h1>"superman-New Krypton."</h1></a></li>
+                <li><a href="../books/engcomic/avenger issue.pdf"><img src="../allimages/english-comic-images/avenger issue.jfif" alt="Image not found."><h1>"the avengers."</h1></a></li>
+                <li><a href="../books/engcomic/YearofVillain.pdf"><img src="../allimages/english-comic-images/YearofVillain.jfif" alt="Image not found."><h1>"the infected."</h1></a></li>
+                <br><br><br><br><br>
+            </ol>
+            <footer>
+        <h1 id="footer">coming <span>s</span>oon..
+                    </h1>
+            </footer>
+    </section>
+</body>
+</html>

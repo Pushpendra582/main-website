@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="", initial-scale="1.0">
+    <title>Magazines</title>
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(255, 250, 240);
+}
+    section{
+        border: 15px solid black;
+        margin: 10px;
+        text-decoration: none;
+        background: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),
+        radial-gradient(113% 91% at 17% -2%, #FF0000FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%,
+       #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),
+         radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
+    }
+    ol{
+        padding: 10px;
+        list-style-type: none;
+        
+    }
+    li{
+        border: 2px solid rgb(0, 255, 0);
+        margin: 20px; 
+        height: 206px;
+        text-decoration: none;
+        background-color: rgb(255, 255, 96);
+        animation: appear 10s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 48%;
+        transition: 10s;
+    }
+    @keyframes appear {
+        from{
+            opacity: 0;
+            transform: translateX(-200px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+     }
+    a#img{
+        margin-left: 50px;
+        text-decoration: none;
+        font-size: 1px;
+        font-family: sans-serif;
+        font-weight: bolder;
+    }
+    img#back{
+        width: 70px;
+        border: 2px solid white;
+        border-radius: 50%;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: 30px;
+        transition: 0.4s;
+    }
+    img#back:hover{
+            border: 2px solid black;
+            border-radius: 50%;
+    }
+    h1#nv{
+        position: absolute;
+        top: 1px;
+        right: 40%;
+        font-size: 60px;
+        text-transform: uppercase;
+        color: rgb(111, 0, 255);
+        text-decoration: none;
+        transition: 0.5s;
+        
+    }
+    h1#nv:hover{
+        color: blue;
+    }
+    img{
+        width: 170px;
+        border: 5px solid black;
+        height: 192px;
+        margin: 2px;
+     }
+     li h1{
+        position: absolute;
+        border-bottom: 3px solid black;
+        border-bottom-left-radius: 50px;
+        border-left: 3px solid black;
+        height: 50px;
+        margin-left: 5px;
+        padding-left: 20px;
+        top: 50px;
+        left: 15%;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: black;
+        transition: 0.3s;
+       
+    }
+li h1:hover {
+  color: rgb(255, 184, 51);
+  border-bottom-color: rgb(255, 184, 51);
+  border-left-color: rgb(255, 184, 51);
+}
+li h1:active {
+  color: blue;
+  border-bottom-color: blue;
+  border-left-color: blue;
+}
+footer{
+    border: 5px solid black;
+    border-radius: 100px;
+    height: 100px;
+    width: 500px;
+    background: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),
+        radial-gradient(113% 91% at 17% -2%, #FF0000FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%,
+       #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),
+         radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
+     margin-left:20px;
+     margin-bottom: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+h1#footer{
+        font-size: 40px;
+        text-transform: uppercase;
+        color: gray;
+        animation-name: moving;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+    }
+     @keyframes moving {
+    0%{
+        color: gray;
+    }
+    50%{
+        color: rgb(68, 57, 57);
+    }
+    100%{
+        color: black;
+        
+    } 
+}
+#s{
+    margin-left: 5px;
+}
+
+
+    </style>
+</head>
+<body>
+    <script src="not.js"></script>
+    <section>
+        <a href="main web.html" id="img"><img src="../allimages/back.png" alt="back" id="back"></a><h1 id="nv">magazines...</h1>
+            <ol>
+                <li><a href="../books/magzine/Ask 09.2024.pdf"><img src="../allimages/magazine- images/Ask.jfif" alt=""><h1>"ask."</h1></a></li>
+                <li><a href="../books/magzine/Babybug 09.2024.pdf"><img src="../allimages/magazine- images/Babybug.jfif" alt=""><h1>"babybug."</h1></a></li>
+                <li><a href="../books/magzine/BollywoodBurglary.pdf"><img src="../allimages/magazine- images/Bollywood Burglary.jfif" alt=""><h1>"bollywood-burglary."</h1></a></li>
+                <li><a href="../books/magzine/Click 09.2024.pdf"><img src="../allimages/magazine- images/Click.jfif" alt=""><h1>"click."</h1></a></li>
+                <li><a href="../books/magzine/ExploreOurWorld.pdf"><img src="../allimages/magazine- images/Explore our World.jfif" alt=""><h1>"explore our world."</h1></a></li>
+                <li><a href="../books/magzine/Faces 09.2024.pdf"><img src="../allimages/magazine- images/Faces.jfif" alt=""><h1>"faces."</h1></a></li>
+                <li><a href="../books/magzine/Ladybug 09.2024.pdf"><img src="../allimages/magazine- images/Ladybug.jfif" alt=""><h1>"ladybug."</h1></a></li>
+                <li><a href="../books/magzine/Muse 09.2024.pdf"><img src="../allimages/magazine- images/Muse.jfif" alt=""><h1>"muse."</h1></a></li>
+                <li><a href="../books/magzine/RedPizza.pdf"><img src="../allimages/magazine- images/Red Pizza.jfif" alt=""><h1>"red-pizza."</h1></a></li>
+                <li><a href="../books/magzine/TeenBreathe.pdf"><img src="../allimages/magazine- images/teen breathe.jfif" alt=""><h1>"TeenBreathe-1."</h1></a></li>
+                <li><a href="../books/magzine/Teen Breathe2.pdf"><img src="../allimages/magazine- images/Teen breaths_2.jfif" alt=""><h1>"TeenBreathe-2."</h1></a></li>
+                <li><a href="../books/magzine/TheCurseofCheese.pdf"><img src="../allimages/magazine- images/TheCurseOfChese.jfif" alt=""><h1>"the curse of cheese."</h1></a></li>
+                <li><a href="../books/magzine/TrickOrTreat.pdf"><img src="../allimages/magazine- images/TrickOrTreat.png" alt=""><h1>"trick-or-treat."</h1></a></li>
+                <li><a href="../books/magzine/wild fast.pdf"><img src="../allimages/magazine- images/wils fast.jfif" alt=""><h1>"wild-fast."</h1></a></li>
+                <li><a href="../books/magzine/Wild haunted.pdf"><img src="../allimages/magazine- images/wild -haunted.jfif" alt=""><h1>"wild-haunted."</h1></a></li>
+                <li><a href="../books/magzine/wild show ofs.pdf"><img src="../allimages/magazine- images/wild show ofs.jfif" alt=""><h1>"wild-showoffs."</h1></a></li>
+                <li><a href="../books/magzine/Wild tails.pdf"><img src="../allimages/magazine- images/wild tails.jfif" alt=""><h1>"wild-tails."</h1></a></li>
+                <br><br><br><br><br>
+            </ol>
+            <footer>
+        <h1 id="footer">coming <span>s</span>oon..
+                    </h1>
+            </footer>
+    </section>
+</body>
+</html>
